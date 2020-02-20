@@ -6,6 +6,10 @@ div{
   padding: 0;
   margin: 0 auto;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
 #header{
   display: flex;
   position: fixed;
@@ -31,9 +35,11 @@ div{
   align-content: end;
   text-align: end;
 }
-.nav-link{
-  display: inline-block;
-  margin: 0 30px 0 30px;
+.nav-link {
+    font-size: 25px;
+    display: inline;
+    margin: 0 30px 0 30px;
+
 }
 #title-section{
   align-content: center;
@@ -87,15 +93,21 @@ div{
   text-align: center;
 
 }
-@media (max-width: 800px) {
-  #header{
+@media (max-width: 1200px) {
+  #header {
     font-size: 16px;
     height: 20px;
   }
-  #header-img{
+
+  #header-img {
     margin: 2px;
     height: 16px;
-    width: 16px ;
+    width: 16px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+    margin: 0 15px 0 15px;
   }
 }
 
